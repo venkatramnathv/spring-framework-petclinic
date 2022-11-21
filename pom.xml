@@ -346,6 +346,10 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <fork>true</fork>
+                    <executable>/usr/lib/jvm/java-11-openjdk-amd64/bin/javac</executable>
+                </configuration>
             </plugin>
 
             <plugin>
